@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+}
+h1{
+    text-align: center;
+    padding: 20px 0 20px;
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border: 1px solid rgb(193, 188, 188);
+    border-radius: 15px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    margin-top: 40px;
+    box-shadow:0 1px 6px 0 #20212447;
+}
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    /* border: 0.5px solid #cccccc; */
+    border: none;;
+    border-radius: 20px;
+    font-size: 1rem;
+    box-shadow:0 1px 6px 0 #20212447;
+}
+
+ .form-group input:focus {
+    border-color: #3b82f6;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+} 
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+ button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ed1624;
+    color: rgb(22, 17, 17);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+} 
+ button:hover{
+    background-color: rgb(164, 32, 32);
+}
+button a{
+    text-decoration: none;
+    color: white;
+} 
+form label{
+    font-weight: 600;
+}
+.index {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+#card{
+    box-shadow: none;   
+}
+
+
+<div class="container centered" style="background-color: white; ">
+<h1>Register</h1>
+<div class="form-group">
+<form action="#" method="POST" name="submit-to-google-sheet">
+<!--- <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required> -->
+
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="student_name" placeholder="enter Your Name" required><br><br>
+
+    <label for="mobile">Mobile Number:</label><br>
+    <input type="tel" id="mobile" name="student_mobile" placeholder="Enter Your mobile number" required><br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="student_dob" required>
+
+   
+
+    <label for="hm_add">Home Address:</label><br>
+    <input type="text" id="hm_add" name="hm_add" placeholder="Enter Your Address" required><br><br>
+
+
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="image"><h8>upload Image:</h8></label><br>
+        <input type="file" name="image" id="card" accept="image/*" required>
+
+            <button type="submit"><a href="login.html">Register</a></button>
+        </div>
+    </form>
+</form>
+
+</div>

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo-removebg-preview.png">
+    <title>Story Books For Kids</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:  sans-serif,arial;
+        }
+         @media (max-width: 320px) {
+            .logo1{
+                display: none;
+            }
+        }
+        .navbar-nav i{
+font-size:30px;
+margin-top: 10px;
+padding: 5px;
+color: #000;
+}
+ @media (max-width:1040px) and (min-width:991px) {
+    .logo1{
+        display: none;
+    } 
+} 
+        body{
+            overflow-x: hidden;
+        }
+        .navbar{
+            height: 90px;
+            box-shadow: 0 0 10px #089da1;
+            z-index: 200;
+        }
+        .d-flex .form-select{
+            font-size: 14px;
+            height: 35px;
+            width: 60%;
+        }
+        .nav-link{
+            color: black;
+            font-size: 20px;
+        }
+        .nav-link:hover{
+            /* background-color: red; */
+            text-decoration: underline;
+            border-radius: 10px;
+            color: black;
+        }
+        .btn{
+            border:1px solid black;
+            color: black;
+        }
+        .navbar-brand{
+            display: flex;
+            gap: 40px;
+        }
+        .navbar-brand p{
+            margin-top: 20px;
+        }
+        .container-fluid1{
+               margin-top: 100px;
+        }
+        /* .navbar{
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        } */
+        /* image */
+      
+   .heading{
+    position: relative;
+    text-align: center;
+    color: white;
+   }
+   .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 50px;
+    font-weight: 500;
+    }
+    .image{
+        height: 350px;
+        background-size: cover;
+        opacity: 0.5;
+    }
+    /* card */
+    .card{
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* border: 1px solid rgb(183, 178, 178); */
+        /* transition: transform 0.4s; */
+        cursor: pointer;
+        border:none;
+
+    }
+    /* .card:hover {
+        transform: scale(1.05);
+    }  */
+    .btn a{
+  text-decoration: none;
+  color: black;
+}
+.btn a:hover{
+  color: white;
+}
+.value{
+  gap: 20px;
+}.text{
+  padding-left: 10px;
+}
+    /* footer */
+    @media (max-width: 767px) {
+      .logo {
+        display: none;
+        margin: 0%;
+        padding: 0%;
+      }
+      .eng{
+        display: flex;
+        align-items: center;
+        margin-left: 0%;
+        gap: 5px;
+      }
+      .eng i{
+        display: none;
+      }
+     
+    }
+    /* foot-panel3 */
+.foot-panel3{
+    color: white;
+    background-color:#222f3d ;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo{
+    background-image: url(logo.png);
+    background-size: cover;
+    height: 70px;
+    width: 160px;
+    margin-top: 5px;
+}
+ .icons{
+    display: flex;
+ }
+ .eng{
+    height: 40px;
+    margin-left: 20px;
+    border: 0.8px solid white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 8px 16px 8px 8px;
+    cursor: pointer;
+    
+ }
+    /* footer2 */
+.footer2{
+    text-align: center;
+    color: white;
+    /* padding: 10px; */
+    background-color: #0f1111;
+}
+.footer2 p{
+  padding: 10px;
+}
+
+ /* connect with us */
+ .connect{
+       width: 100%;
+       height: 100px;
+       color: white;
+       text-align: center;
+       /* background-color: #222f3d; */
+       margin-top: 10px;
+       margin-bottom: 10px;
+    }
+    .social-media {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+      margin-bottom: 10px; 
+      padding-bottom: 10px;
+      width: 100%;
+    }
+
+    .social-media a {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      font-size: 24px;
+      text-shadow: 0 0 3px red, 0 0 5px blue;
+    }
+    .social-media a:hover {
+    transform: scale(1.05);
+} 
+/* Colors for each icon */
+.facebook { 
+    background-image: url(./tasks/facebook.jpeg);
+    background-size: cover;
+ }
+.linkedin { 
+    background-image: url(./tasks/linkdin.png);
+    background-size: cover;
+}
+.threads { 
+    background-image: url(./tasks/thread.png);
+    background-size: cover;
+}
+.youtube { 
+    background-image: url(data:image/png;base64,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);
+    background-size: cover; 
+}
+    </style>
+</head>
+<body class="bg-light">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light position-sticky top-0">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="logo-removebg-preview.png" alt="Logo" style="height: 70px;" class="logo1">
+                <p>BOOK STORE</p>
+            </a>
+            <!-- Toggler for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Fullscreen Menu for Larger Screens -->
+            <div class="collapse navbar-collapse d-none d-lg-flex">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="bookshop1.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feature1.html">Featured</a></li>
+                    <li class="nav-item"><a class="nav-link"  href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Sign Up</a></li>
+                    <a href="add_card1.html"><i  class="fa-solid fa-cart-plus"></i></a>
+                </ul>
+                 <form class="d-flex ms-3">
+                    <input class="form-control me-2 lg" type="search" placeholder="Search Book" aria-label="Search" >
+                    <button class="btn btn-outline-danger" type="submit">Search</button>
+                </form> 
+            </div>
+        </div>
+    </nav>
+
+     <!-- Offcanvas for Mobile -->
+     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="bookshop1.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="feature1.html">Featured</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html">Sign Up</a></li>
+                <a href="add_card1.html"><i  class="fa-solid fa-cart-plus"></i></a>
+            </ul>
+            <form class="d-flex mt-3">
+        
+                <input class="form-control me-2" type="search" placeholder="Search Book" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- image -->
+    <div class="heading">
+        <img src="backimg.jpeg" class="image" alt="book" style="width: 100%;">
+        <div class="centered"><i>Story Books For Kids</i></div>
+     </div>
+
+     <!-- box books -->
+     <div class="container-fluid my-4" >
+        <div class="row text-center" class="bg-body-secondary">
+          <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
+            <div class="card">
+              <div class="header" style="border:none; background-color: none;">
+              <img src="./shop/kidbook1.jpeg" class="card-img-top p-4" alt="Kids Book" style="height: 400px; width: 80%; object-fit: cover;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Let's Go Shopping</h5>
+                <p>
+                  <span class="text ml-2">₹100.00</span>
+                  <span class="text" style="text-decoration: line-through;">₹120.00</span>
+                </p>
+                <button class="btn btn-outline-danger btn-sm" style="margin-left: 4%;"><a href="add_card1.html">Add To Cart</a></button>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
+            <div class="card">
+              <div class="header" style="border:none; background-color: none;">
+              <img src="./shop/sarangi.jpeg" class="card-img-top p-4" alt="Prehistoric India" style="height: 400px; width: 80%; object-fit: cover;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Sarangi Books</h5>
+                <p>
+                  <span class="text ml-2">₹100.00</span>
+                  <span class="text" style="text-decoration: line-through;">₹120.00</span>
+                </p>
+                <button class="btn btn-outline-danger btn-sm" style="margin-left: 4%;"><a href="add_card1.html">Add To Cart</a></button>
+
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
+            <div class="card">
+              <div class="header" style="border:none; background-color: none;">
+              <img src="./shop/english reader.jpeg" class="card-img-top p-4" alt="Prehistoric India" style="height: 400px; width: 80%; object-fit: cover;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">English Reader</h5>
+                <p>
+                  <span class="text ml-2">₹100.00</span>
+                  <span class="text" style="text-decoration: line-through;">₹120.00</span>
+                </p>
+                <button class="btn btn-outline-danger btn-sm" style="margin-left: 4%;"><a href="add_card1.html">Add To Cart</a></button>
+
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
+            <div class="card">
+              <div class="header" style="border:none; background-color: none;">
+              <img src="./shop/marigold.jpeg" class="card-img-top p-4" alt="History of Medieval India" style="height: 400px; width: 80%; object-fit: cover;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Marigold Book</h5>
+                <p>
+                  <span class="text ml-2">₹100.00</span>
+                  <span class="text" style="text-decoration: line-through;">₹120.00</span>
+                </p>
+                <button class="btn btn-outline-danger btn-sm" style="margin-left: 4%;"><a href="add_card1.html">Add To Cart</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- box books -->
+      <div class="container-fluid my-4">
+        <div class="row text-center">
+          <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
+            <div class="card">
+              <div class="header" style="border:none; background-color: none;">
+              <img src="./shop/Jungle Book.jpg" class="card-img-top p-4" alt="Kids Book" style="height: 400px; width: 80%; object-fit: cover;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Jungle Book</h5>
+                <p>
+                  <span class="text ml-2">₹90.00</span>
+                  <span class="text" style="text-decoration: line-through;">₹120.00</span>
+                </p>
+                <button class="btn btn-outline-danger btn-sm" style="margin-left: 4%;"><a href="add_card1.html">Add To Cart</a></button>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
+            <div class="card">
+              <div class="header" style="border:none; background-color: none;">
+              <img src="./shop/The Little Prince.jpg" class="card-img-top p-4" alt="Prehistoric India" style="height: 400px; width: 80%; object-fit: cover;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">The Little Prince</h5>
+                <p>
+                  <span class="text ml-2">₹60.00</span>
+                  <span class="text" style="text-decoration: line-through;">₹70.00</span>
+                </p>
+                <button class="btn btn-outline-danger btn-sm" style="margin-left: 4%;"><a href="add_card1.html">Add To Cart</a></button>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
+            <div class="card">
+              <div class="header" style="border:none; background-color: none;">
+              <img src="./shop/Bedtime Stories.jpg" class="card-img-top p-4" alt="Prehistoric India" style="height: 400px; width: 80%; object-fit: cover;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Bedtime Stories</h5>
+                <p>
+                  <span class="text ml-2">₹100.00</span>
+                  <span class="text" style="text-decoration: line-through;">₹120.00</span>
+                </p>
+                <button class="btn btn-outline-danger btn-sm" style="margin-left: 4%;"><a href="add_card1.html">Add To Cart</a></button>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
+            <div class="card">
+              <div class="header" style="border:none; background-color: none;">
+              <img src="./shop/Cinderella.jpg" class="card-img-top p-4" alt="History of Medieval India" style="height: 400px; width: 80%; object-fit: cover;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Cinderella</h5>
+                <p class="value">
+                  <span class="text ml-2">₹90.00</span>
+                  <span class="text" style="text-decoration: line-through;">₹100.00</span>
+                </p>
+                <button class="btn btn-outline-danger btn-sm" style="margin-left: 4%;"><a href="add_card1.html">Add To Cart</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- message -->
+      <div class="container-fluid mt-3" style="padding: 10px 30px;" >
+        <div class="message">
+          <!-- Title -->
+          <h4 class="text">All You Need to Know About Children’s Books Online at Best Prices</h4>
+    
+          <!-- Introduction Paragraph -->
+          <p>The children's books category comprises a range of books across genres, offering captivating stories designed to entertain and educate young readers. These books play a crucial role in fostering a love for reading, sparking creativity, and imparting valuable life lessons to children.</p>
+          <p>Here we attempt to answer all the questions you may have about the children’s book category at Bookshop.com.</p>   
+    
+          <!-- Section: What are Children’s Books? -->
+          <h3 class="mt-4">What are children’s books?</h3>
+          <p>Children's books are specifically written and illustrated for young readers, typically ranging from infants to early teenagers. These books cover a wide range of genres, themes, and reading levels to cater to different age groups and developmental stages. They often feature engaging stories, colorful illustrations, and age-appropriate language to captivate the young readers and foster a love for reading. 
+          Children's books play a vital role in nurturing literacy skills, sparking creativity, and promoting emotional and cognitive development in children. </p>
+    
+          <!-- Section: Different Types of Children's Books -->
+          <!-- <h3 class="mt-4">Different types Of Children's Books</h3>
+          <p><strong>Board Books:</strong> Sturdy books with thick pages suitable for infants and toddlers, often featuring simple concepts, shapes, colors, and basic vocabulary.</p>
+          <p><strong>Picture Books:</strong> Richly illustrated books with a combination of text and pictures, aimed at preschool and early elementary school-aged children. They rely more on visuals, supplemented by text, to tell engaging stories.</p>  
+          <p><strong>Alphabet and Counting Books:</strong> Books that focus on teaching children the alphabet or counting through playful and interactive content, helping them learn fundamental skills.</p>  
+          <p><strong>Nursery Rhymes and Poetry Books:</strong> Classic stories and folktales from different cultures spark imagination and moral lessons, often featuring mythical creatures and magical elements.</p>
+          <p><strong>Language Books:</strong> Embark on linguistic adventures that make learning languages exciting and interactive, fostering linguistic proficiency in a playful way.</p>
+     -->
+          <!-- Section: Who Are the Target Readers for Children’s Books? -->
+          <h3 class="mt-4">Who are the target readers for children’s books?</h3>
+          <p><strong>The general target reader categories for children's books are:</strong></p>
+          <ul>
+            <li><b>0-3 years</b> – <strong>Board Books:</strong> These books have sturdy pages that can be easily handled by toddlers. The content features rhyme and repeat lines. They usually have fewer than 20 pages and 300 words. Example: Baby Touch series</li>
+            <li><b>3-8 years</b> – <strong>Picture Books:</strong> These books feature rich illustrations and engaging stories, often read aloud by parents or caregivers. Picture books rely on illustrations to tell the story, frequently imparting valuable lessons centered around developing emotional intelligence, positive relationships, social connections, and moral values. Example: The Very Hungry Caterpillar by Eric Carle</li>
+            <li><b>5-8 years</b> – <strong>Early Readers:</strong> Designed for children who are starting to read independently. These books have short sentences and focus on simplicity and repetition of the text, rather than the story. This is primarily to encourage the child to read by deciphering the words. Example: The Gruffalo by Julia Donaldson</li>
+            <li><b>7-10 years</b> – <strong>Chapter Books:</strong> These books have more complex stories and language, and therefore, are broken into chapters to facilitate easy reading. They often feature illustrations. Example: Junie B Jones series</li>
+            <li><b>8-12 years</b> – <strong>Middle Grade Books:</strong> These books feature longer narratives, more complex themes, and age-appropriate content, often intended as a first step towards regular fiction reading. Example: Matilda by Roald Dahl</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- footer -->
+      <div class="container1" style="background-color:#222f3d; margin-top: 100px;">
+        <div class="d-flex flex-column flex-lg-row justify-content-between p-4">
+          <!-- Text Section -->
+          <div class="text pd-4 mb-4 mb-lg-0" style="width: 100%; max-width: 600px;">
+            <h3 class="text-white">Book Store</h3>
+            <p class="text-white" style="width: auto;">
+              Embark on a literary journey with Bookstore, the online book wonderland nestled in Pune since 2018. 
+              We take pride in being sustainable and eco-friendly - from new releases to treasured pre-loved books. 
+              Dive into the sea of bookish merchandise that'll make any bookworm's heart flutter. 
+            </p>
+          </div>
+      
+          <!-- Links Section -->
+          <div class="d-flex flex-column flex-md-row justify-content-evenly mt-4">
+            <div class="col-md-2">
+              <h5 class="text-white">About</h5>
+              <ul class="list-unstyled">
+                <li><a href="about.html" class="text-white text-decoration-none">New Arrivals</a></li>
+                <li><a href="about.html" class="text-white text-decoration-none">New Year, New You</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-2">
+              <h5 class="text-white">Home</h5>
+              <ul class="list-unstyled">
+                <li><a href="kids_book1.html" class="text-white text-decoration-none">Kids Books</a></li>
+                <li><a href="history.html" class="text-white text-decoration-none">History Books</a></li>
+                <li><a href="12thbooks.html" class="text-white text-decoration-none">Education</a></li>
+                <li><a href="young_adult.html" class="text-white text-decoration-none">Young Adults</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-2">
+              <h5 class="text-white">Features</h5>
+              <ul class="list-unstyled">
+                <li><a href="feature1.html" class="text-white text-decoration-none">Responsive Website</a></li>
+                <li><a href="feature.html" class="text-white text-decoration-none">Online Store</a></li>
+                <li><a href="feature1.html" class="text-white text-decoration-none">Shopping Cart</a></li>
+              </ul>
+            </div>
+      
+            <!-- Contact Section -->
+             <div class="col-md-2">
+              <h5 class="text-white">Connect with Us</h5> 
+              <p class="text-white" >Mobile no.: 3423109084 (10am to 6pm)</p>
+            </div> 
+          </div>   
+        </div>
+      
+        <hr class="border-light"> 
+      
+        <!-- Bottom Section -->
+        <div class="foot-panel3" style="padding-bottom: 10px;">
+          <div class="logo d-sm-block"></div>
+          <div class="icons">
+            <div class="eng">
+              <i class="fa-solid fa-globe"></i><span> English</span>
+            </div>
+            <div class="eng">
+              <i class="fa-solid fa-indian-rupee-sign"></i><span> Rupee</span>
+            </div>
+            <div class="eng">
+              <i class="fa-solid fa-flag-usa"></i><span> India</span>
+            </div>
+          </div>
+        </div>
+      
+        <hr class="border-light"> 
+      
+        <!-- Connect with us -->
+        <div class="connect" style="background-color:#222f3d; padding-top: 10px;">
+          <h4 class="text-center" style="color:white ;">Connect with us</h4>
+          <div class="social-media">
+            <a href="https://www.facebook.com/" class="facebook" title="Facebook"></a>
+        <a href="https://www.linkedin.com/feed/" class="linkedin" title="LinkedIn"></a>
+        <a href="https://www.threads.net/?hl=en" class="threads" title="Threads"></a>
+        <a href="https://www.youtube.com/" class="youtube" title="YouTube"></a>
+          </div>
+          
+        </div> 
+        <div class="footer2">
+          <p class="text-center text-white">&copy; 2025 Book Shop | All rights reserved.</p>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
